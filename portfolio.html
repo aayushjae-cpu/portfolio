@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio - aayush Jha</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #eef5ff, #f8fbff);
+            color: #263238;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #123c69, #1d70b7);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .profile {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1d70b7, #65b5f6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            border: 6px solid #e7f3ff;
+        }
+
+        .profile-info h2 {
+            color: #123c69;
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .profile-info p {
+            margin: 7px 0;
+            font-size: 17px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 7px 22px rgba(0,0,0,0.07);
+            border-left: 5px solid #1d70b7;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.11);
+        }
+
+        .card h3 {
+            color: #123c69;
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .goal {
+            grid-column: span 2;
+            background: linear-gradient(135deg, #123c69, #1d70b7);
+            color: white;
+            border-left: none;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .goal h3 {
+            color: white;
+            font-size: 25px;
+        }
+
+        .goal p {
+            font-size: 19px;
+            margin-top: 8px;
+        }
+
+        .highlight {
+            color: #1d70b7;
+            font-weight: bold;
+        }
+
+        .goal .highlight {
+            color: #ffffff;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #123c69;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 15px;
+        }
+
+        .quote {
+            margin-top: 25px;
+            text-align: center;
+            font-style: italic;
+            color: #52636f;
+            font-size: 17px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .goal {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Personal Portfolio</h1>
+        <p>A Glimpse Into My Personality, Interests & Goals</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Profile Section -->
+        <section class="profile">
+            <div class="avatar">RJ</div>
+
+            <div class="profile-info">
+                <h2>aayush jha</h2>
+                <p><strong>Class:</strong> X</p>
+                <p><strong>Section:</strong> creaters</p>
+                <p><strong>Sport:</strong> Cricket 🏏</p>
+            </div>
+        </section>
+
+        <!-- Information Cards -->
+        <div class="grid">
+
+            <div class="card">
+                <h3>🎵 My Likes</h3>
+                <p>
+                    I enjoy <span class="highlight">listening to music</span>
+                    and <span class="highlight">playing cricket</span>.
+                    These activities help me relax, stay active and enjoy my free time.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>📚 My Dislike</h3>
+                <p>
+                    One subject I do not particularly enjoy is
+                    <span class="highlight">History</span>.
+                    However, I believe every subject teaches us something valuable.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🔬 My Interest</h3>
+                <p>
+                    My favourite area of interest is
+                    <span class="highlight">Science</span>.
+                    I enjoy learning how things work and discovering new concepts.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🤝 My Peer</h3>
+                <p>
+                    My peer is <span class="highlight">shubhesh shukla</span>.
+                    Working and learning with friends makes school life more enjoyable.
+                </p>
+            </div>
+
+            <!-- Goal -->
+            <div class="card goal">
+                <h3>🏏 My Future Goal</h3>
+                <p>
+                    My dream is to <span class="highlight">become a Cricketer</span>.
+                    I want to work hard, improve my skills and make my passion for cricket
+                    a successful career.
+                </p>
+            </div>
+
+        </div>
+
+        <p class="quote">
+            "Dream big, work hard, stay focused and never give up."
+        </p>
+
+    </div>
+
+    <footer>
+        <p>© 2026 aayush Jha | Class X - creaters</p>
+    </footer>
+
+</body>
+</html>
